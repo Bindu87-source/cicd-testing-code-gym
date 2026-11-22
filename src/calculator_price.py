@@ -6,6 +6,6 @@ def calculate_price(price, customer_type):
         raise ValueError("Invalid customer type")
 
     if customer_type == "VIP":
-        return round(price * 0.80, 2)
+        return round(price * 0.90, 2)
 
     return price
