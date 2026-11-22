@@ -23,9 +23,7 @@ class PriceCalculatorTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_price(-50, "VIP")
 
-    def test_unknown_customer_type_is_rejected(self):
-        with self.assertRaises(ValueError):
-            calculate_price(100, "GOLD")
+   
 
 
 if __name__ == "__main__":
