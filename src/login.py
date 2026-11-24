@@ -25,7 +25,7 @@ class LoginSystem:
             attempts = self.failed_attempts.get(username, 0) + 1
             self.failed_attempts[username] = attempts
 
-            if attempts >= 6:
+            if attempts >= 3:
                 self.locked_users.add(username)
                 return "Account locked"
 
