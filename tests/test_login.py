@@ -1,6 +1,6 @@
 
 import pytest
-from app.login import LoginSystem
+from src.login import LoginSystem
 
 
 @pytest.fixture
